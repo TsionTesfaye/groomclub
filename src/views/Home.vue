@@ -3,25 +3,27 @@
 import Footer from '../components/Footer.vue';
 </script>
 <template>
-    <p class="text-sm "> Wellness-focused grooming, delivered to your doorstep </p>
-    <p>The first mobile dog grooming service developed by vets for happy, healthy pets</p>
-    <button>Join the club</button>
+    <h1 class="text-5xl p-5 text-center"> <span class="font-bold block">Wellness-focused </span> grooming, delivered to your doorstep </h1>
+    <p class="text-3xl text-center p-5">The first mobile dog grooming service developed by vets for happy, healthy pets</p>
+    
+    
+    <button class="bg-shark text-white text-3xl p-5 mx-auto rounded-3xl">Join the club</button>
     <!-- hero image -->
-    <p>The feeling is mutual</p>
+    <p class="text-3xl text-center">The feeling is <span class="font-bold">mutual</span></p>
     <!-- slider -->
     <!--  -->
-
-        <p>
+    <div class="flex flex-wrap gap-5 justify-around p-3">
+        <p class="bg-sidecar text-center p-2 rounded-md font-bold text-shark">
             <span> Germantown </span>
-            <span> coming soon </span>
+            <!-- <span> coming soon </span> -->
         </p>
         <p>
             <span> East Nashville </span>
             <span> coming soon </span>
         </p>
-        <p>
+        <p class="p-3 rounded-md font-bold text-shark border-[2px] border-shark">
             <span> Downtown </span>
-            <span> coming soon </span>
+            <span class="bg-sidecar p-2 rounded-md font-bold text-shark text-xs"> coming soon </span>
         </p>
         <p>
             <span> The Gulch </span>
@@ -35,25 +37,26 @@ import Footer from '../components/Footer.vue';
             <span> 12 South </span>
             <span> coming soon </span>
         </p>
+    </div>
 
         <!-- video -->
 
-        <p>Don't see your neighborhood? 
-            <span> Don't worry. </span>
+        <p class="text-shark text-3xl text-center p-6">Don't see your neighborhood? 
+            <span class="font-bold"> Don't worry. </span>
         </p>
 
-        <p>
+        <p class="text-base font-bold text-center p-5">
             Follow us on Instagram and message us for updates on new neighborhoods! 
         </p>
 
-        <Button>
+        <Button class="m-auto bg-shark p-5 rounded-full">
             <!-- icon -->
-            @groomclub4dogs
+            <span class="text-sidecar font-bold text-xl">@groomclub4dogs</span>
         </Button>
 
-        <div>
+        <div class="bg-shark text-white_linen p-5 flex justify-center flex-col items-center">
             <!-- image -->
-            <p> Mobile grooming, totally reimagined </p>
+            <p class="text-sidecar text-5xl text-cente p-5"> Mobile grooming, <span class="font-bold block">totally reimagined </span></p>
             
             <div>
                 <!-- icon  -->
