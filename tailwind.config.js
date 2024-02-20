@@ -11,6 +11,7 @@ export default {
         sidecar:"#f3e6bc",
         beryl_green:"#dce5b8",
         zinnwaldite:"#eacbac",
+        heather:"#bdccd4",
       }
     },
   },
