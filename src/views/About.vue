@@ -160,4 +160,6 @@
     <button>Join the club</button>
 
     <p>Call or text (615) 619-3647</p>
-</div></template>
+</div>
+
+</template>
