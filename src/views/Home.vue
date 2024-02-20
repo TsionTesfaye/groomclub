@@ -1,3 +1,7 @@
+
+<script>
+import Footer from '../components/Footer.vue';
+</script>
 <template>
     <p class="text-sm "> Wellness-focused grooming, delivered to your doorstep </p>
     <p>The first mobile dog grooming service developed by vets for happy, healthy pets</p>
@@ -297,6 +301,7 @@
 
             <p>Call or text (615) 619-DOGS</p>
         </div>
+        <Footer />
 
 
       
