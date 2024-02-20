@@ -205,8 +205,99 @@
         
         
         <div>
-        
-
+        <!-- image -->
+        <p>Mobile grooming, <span> totally reimagined </span></p>
+            <ul>
+                <li> Grooming focused on health </li>
+                <li> Delivered to your home </li>
+                <li> Same-week appointments </li>
+                <li> Grooming focused on health </li>
+                <li> Grooming focused on health </li>
+                <li> Grooming focused on health </li>
+                <li> Grooming focused on health </li>
+            </ul>
+            <button>Join the club</button>
         </div>
+
+        <div>
+            <p>
+                Traditional <span> groomer </span>
+            </p>
+
+            <ul>
+                <li> Grooming focused on health </li>
+                <li> Delivered to your home </li>
+                <li> Same-week appointments </li>
+                <li> Grooming focused on health </li>
+                <li> Grooming focused on health </li>
+                <li> Grooming focused on health </li>
+            </ul>
+        </div>
+
+        <h2>
+            Have a question? <span>We got you</span>
+        </h2>
+
+        <div>
+        <!-- image -->
+        <p>
+            Logo that says call or text us at 615-619-3647
+            Call or text (615) 619-DOGS
+            Available now!
+        </p>
+        </div>
+
+                <!-- image -->
+
+        <h2>FAQ</h2>
+        
+        <div>
+            <h3>What is groom club</h3>
+            <p>
+                Groom Club provides wellness-focused mobile grooming services, developed by vets, delivered to your doorstep.
+            </p>
+        </div>
+        <div>
+            <h3>What is groom club</h3>
+            <p>
+                Groom Club provides wellness-focused mobile grooming services, developed by vets, delivered to your doorstep.
+            </p>
+        </div>
+        <div>
+            <h3>What is groom club</h3>
+            <p>
+                Groom Club provides wellness-focused mobile grooming services, developed by vets, delivered to your doorstep.
+            </p>
+        </div>
+        <div>
+            <h3>What is groom club</h3>
+            <p>
+                Groom Club provides wellness-focused mobile grooming services, developed by vets, delivered to your doorstep.
+            </p>
+        </div>
+        <div>
+            <h3>What is groom club</h3>
+            <p>
+                Groom Club provides wellness-focused mobile grooming services, developed by vets, delivered to your doorstep.
+            </p>
+        </div>
+        <div>
+            <h3>What is groom club</h3>
+            <p>
+                Groom Club provides wellness-focused mobile grooming services, developed by vets, delivered to your doorstep.
+            </p>
+        </div>
+
+        <div>
+            <h2> <span> Wellness-focused </span> grooming, delivered to your doorstep</h2>
+
+            <!-- image -->
+
+            <button> Join the club </button>
+
+            <p>Call or text (615) 619-DOGS</p>
+        </div>
+
+
       
 </template>
