@@ -2,6 +2,9 @@
 <script setup>
 import Footer from '../components/Footer.vue';
 import JoinButton from '../components/JoinButton.vue';
+import LabelBody from '../components/LabelBody.vue';
+import LabelService from '../components/LabelService.vue';
+import LocationLabel from '../components/LocationLabel.vue';
 </script>
 <template>
     <h1 class="text-5xl p-5 text-center"> <span class="font-bold block">Wellness-focused </span> grooming, delivered to your doorstep </h1>
@@ -27,30 +30,19 @@ import JoinButton from '../components/JoinButton.vue';
     </div>
 
     <div class="flex flex-wrap gap-5 justify-around p-3">
-        <p class="bg-sidecar text-center p-2 rounded-md font-bold text-shark">
-            <span> Germantown </span>
-            <!-- <span> coming soon </span> -->
-        </p>
-        <p>
-            <span> East Nashville </span>
-            <span> coming soon </span>
-        </p>
-        <p class="p-3 rounded-md font-bold text-shark border-[2px] border-shark">
-            <span> Downtown </span>
-            <span class="bg-sidecar p-2 rounded-md font-bold text-shark text-xs"> coming soon </span>
-        </p>
-        <p>
-            <span> The Gulch </span>
-            <span> coming soon </span>
-        </p>
-        <p>
-            <span> Belmont-Hillsboro </span>
-            <span> coming soon </span>
-        </p>
-        <p>
-            <span> 12 South </span>
-            <span> coming soon </span>
-        </p>
+        
+        <LocationLabel town="Germantown" :soon="false" />
+        
+        <LocationLabel town="Nashville" :soon="false" />
+        
+        <LocationLabel town="Downtown" :soon="true" />
+        
+        <LocationLabel town="The Gulch" :soon="true" />
+        
+        <LocationLabel town="Belmont-Hillsboro" :soon="true" />
+        
+        <LocationLabel town="12 South" :soon="true" />
+       
     </div>
 
         <!-- video -->
@@ -69,7 +61,7 @@ import JoinButton from '../components/JoinButton.vue';
             <span class="text-sidecar font-bold text-xl">@groomclub4dogs</span>
         </Button>
 
-        <div class="bg-shark text-white_linen mx-8 my-7 rounded-3xl p-5 flex justify-center flex-col items-center text-center gap-5">
+        <div class="bg-shark text-white_linen mx-8 my-7 rounded-3xl p-8 flex justify-center flex-col items-center text-center gap-5">
             <!-- image -->
             <img class="w-full h-92 rounded-2xl" src="../assets/pictures/groomclub-15.webp" />
             <p class="text-sidecar text-5xl text-cente p-5"> Mobile grooming, <span class="font-bold block">totally reimagined </span></p>
@@ -99,7 +91,7 @@ import JoinButton from '../components/JoinButton.vue';
         <!-- image x2 -->
     <div class="relative m-5">
 
-        <img class="w-full h-auto" src="../assets/pictures/baily.svg" />
+        <img class="w-full h-auto shadow-xl rounded-3xl" src="../assets/pictures/baily.svg" />
             
         <img class="w-full h-auto rounded-full" src="../assets/pictures/dog-text-p-800.png" />
         
@@ -107,31 +99,41 @@ import JoinButton from '../components/JoinButton.vue';
 
 
 
-        <p class="text-2xl text-center m-10">Total <span class="font-bold"> Care </span> </p>
+        <p class="text-3xl text-center m-8">Total <span class="font-bold"> Care </span> </p>
 
-        <p class="text-center m-5">Not all dogs need haircuts, but every dog needs consistent care to stay healthy. Our Total Care grooming service is all-inclusive without add-ons or upsells and focuses on what really matters — your dog's health.</p>
+        <p class="text-lg text-center m-5">Not all dogs need haircuts, but every dog needs consistent care to stay healthy. Our Total Care grooming service is all-inclusive without add-ons or upsells and focuses on what really matters — your dog's health.</p>
 
         <p class="font-bold text-center m-5">Included with Total Care:</p>
         
-        <div class="flex flex-wrap gap-4 justify-center">
-            <button class="bg-beryl_green p-2 rounded-xl">Wellness check</button>
-            <button>Soothing bath</button>
-            <button>Nail trim & Dremel</button>
-            <button>Nail trim & Dremel</button>
-            <button>Wellness check</button>
-            <button>Wellness check</button>
-            <button>Wellness check</button>
-            <button>Wellness check</button>
-            <button>Wellness check</button>
-            <button>Wellness check</button>
-            <button>Wellness check</button>
-
-            <hr>
-
-            <p class="font-bold">Optional services:</p>
-            <button>Haircut</button>
-            <button>De-shedding</button>
+        <div class="flex flex-wrap gap-4 justify-center m-8">
+            <LabelService service="Wellness check" />
+            <LabelService service="Soothing bath" />
+            <LabelService service="Nail trim & Dremel" />
+            <LabelService service="Blow dry" />
+            <LabelService service="Teeth brushing" />
+            <LabelService service="Brush out" />
+            <LabelService service="Ear cleaning" />
+            <LabelService service="Eye cleaning" />
+            <LabelService service="Anal gland expression" />
+            <LabelService service="Sanitary trim" />
+            <LabelService service="Facial scrub" />
+            
         </div>
+
+        
+        <hr class="">
+
+        <div class="m-8 ">
+
+            <p class="font-bold block text-center">Optional services:</p>
+            <div class="flex gap-10 items-center justify-center m-5">
+
+                <LabelService service="Haircut" />  
+                <LabelService service="De-shedding" />
+            </div>
+        
+        </div>
+
 
 
         <JoinButton />
@@ -144,36 +146,16 @@ import JoinButton from '../components/JoinButton.vue';
 
             <p> Early detection is critical to managing diseases. Groom Club members see a veterinary professional up to 12 times more per year than non-members, increasing the chances of catching a health issue early. </p>
 
-            <div class="flex flex-wrap gap-8 relative m-8">    
+            <div class="flex flex-wrap gap-8 relative m-8"> 
                 
-                <div class="bg-white hover:bg-sidecar hover:border-2 hover:border-shark w-fit p-2 px-5 rounded-lg group">
-                    <p class="p-3 rounded-md absolute hidden group-hover:block top-0  bg-shark text-white">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Est fugiat facilis exercitationem cupiditate? Quas omnis eos ipsam sequi deserunt. Vitae, laudantium. Ratione atque pariatur cumque asperiores voluptatem explicabo tenetur eum repellendus placeat, ipsum rerum vitae sapiente at quaerat eius obcaecati! Blanditiis assumenda dicta modi quibusdam explicabo? Dignissimos, nesciunt. Reiciendis, debitis.</p>
-                    <div>Eye</div>
-                </div>
                 
-                <div >
-                    <div>Eye</div>
-                </div>
-                
-                <div>
-                    <div>Eye</div>
-                </div>  
-
-                <div>
-                    <div>Eye</div>
-                </div> 
-
-                <div>
-                    <div>Eye</div>
-                </div> 
-
-                <div>
-                    <div>Eye</div>
-                </div>  
-
-                <div>
-                    <div>Eye</div>
-                </div>
+                <LabelBody part="Eye" />
+                <LabelBody part="Ear" />
+                <LabelBody part="Nose" />
+                <LabelBody part="Dental" />
+                <LabelBody part="Paw" />
+                <LabelBody part="Skin" />
+                <LabelBody part="Sanitary" />
 
                 <!-- image -->
                 <div>
