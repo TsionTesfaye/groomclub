@@ -1,5 +1,10 @@
+
 <script setup>
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome';
+import InstagramIcon from 'vue-material-design-icons/Instagram.vue';
+import FacebookIcon from 'vue-material-design-icons/Facebook.vue';
+import LinkedinIcon from 'vue-material-design-icons/Linkedin.vue';
+
 </script>
 
 <template>
@@ -8,13 +13,15 @@ import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome';
 
     <div class="p-5">
 
-        <img class="fill-sidecar mb-5" src="../assets/pictures/groomclub_gc.svg" />
+        <img class="text-sidecar fill-current mb-5" src="../assets/pictures/groomclub_gc.svg" />
 
-        <p class="text-3xl my-8">Sign up for our <span class="font-bold"> newsletter </span></p>
+        <p class="text-3xl my-6">Sign up for our <span class="font-bold"> newsletter </span></p>
         
-        <div class="">
-            <input class="mb-8 px-10 py-5 rounded-xl text-shark bg-white placeholder:text-shark placeholder:font-semibold" placeholder="Enter your Email" type="email">
-            <img class="fill-sidecar mb-5" src="../assets/pictures/forward_black.svg" />
+        <div class="flex items-center justify-center p-4 rounded-3xl bg-white shadow-lg mb-8">
+            <!-- <div> -->
+                <input class="outline-none w-full h-full text-shark  placeholder:text-shark placeholder:font-normal placeholder:text-2xl" placeholder="Enter your email" type="email">
+                <img class="fill-sidecar" src="../assets/pictures/forward_black.svg" />
+            <!-- </div> -->
         </div>
 
         <p class="text-3xl mb-5">Find your <span class="font-bold"> way </span></p>
@@ -35,11 +42,17 @@ import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome';
             <li>
                 <a>Terms of services</a>
             </li>
-        </ul
-        >
+        </ul>
+
+        <div class="flex gap-5 text-7xl text-shark pr-5 my-8">
+            <InstagramIcon class="bg-sidecar hover:bg-white rounded-full p-3 cursor-pointer" />
+            <FacebookIcon  class="bg-sidecar hover:bg-white rounded-full p-3  cursor-pointer" />
+            <LinkedinIcon  class="bg-sidecar hover:bg-white rounded-full p-3  cursor-pointer" />
+        </div>
+
     </div>
         <!-- social icons -->
-        <font-awesome-icon class="w-full h-full" icon="instagram" />
+
         <img class="w-full h-full" src="../assets/pictures/illofooter.png" alt=""> 
 
     </div>

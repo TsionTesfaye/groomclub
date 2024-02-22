@@ -6,17 +6,24 @@ import JoinButton from '../components/JoinButton.vue';
 import LabelBody from '../components/LabelBody.vue';
 import LabelService from '../components/LabelService.vue';
 import LocationLabel from '../components/LocationLabel.vue';
+import InstagramIcon from 'vue-material-design-icons/Instagram.vue';
 </script>
+
 <template>
-    <h1 class="text-5xl p-5 text-center"> <span class="font-bold block">Wellness-focused </span> grooming, delivered to your doorstep </h1>
-    <p class="text-3xl text-center p-5">The first mobile dog grooming service developed by vets for happy, healthy pets</p>
-    
-    
+
+    <h1 class="text-5xl md:text-6xl p-5 text-center"> <span class="font-bold block">Wellness-focused </span> grooming, delivered to your doorstep </h1>
+    <p class="text-xl md:text-2xl text-center p-5">The first mobile dog grooming service developed by vets for happy, healthy pets</p>
+
     <JoinButton />
     <!-- hero image -->
-    <img class="w-full h-full" src="../assets/pictures/groomclub-hero.png" />
-    <p class="text-3xl text-center p-5">The feeling is <span class="font-bold">mutual</span></p>
+    <div class="flex overflow-x-hidden">
+        <img class="w-screen h-52 animate-scroll_infinite" src="../assets/pictures/groomclub-hero.png" />
+        <img class="w-screen h-52 animate-scroll_infinite" src="../assets/pictures/groomclub-hero.png" />
+    </div>
+
+    <p class="text-3xl md:text-5xl text-center p-5">The feeling is <span class="font-bold">mutual</span></p>
     <!-- slider -->
+
     <div>
 
         <div class="flex gap-2 items-center h-fit bg-white p-5 rounded-2xl shadow-xl mx-5">
@@ -28,6 +35,16 @@ import LocationLabel from '../components/LocationLabel.vue';
             </p>
         </div>
         
+    </div>
+
+
+    <div class="flex overflow-x-hidden">
+        <p class="text-5xl my-10 text-center animate-scroll_infinite whitespace-nowrap">
+            Hey <span class="font-bold"> Nashville </span> we're on your doorstep
+        </p>
+        <p class="text-5xl my-10 text-center animate-scroll_infinite whitespace-nowrap">
+        Hey <span class="font-bold"> Nashville </span> we're on your doorstep
+        </p>
     </div>
 
     <div class="flex flex-wrap gap-5 justify-around p-10">
@@ -59,10 +76,13 @@ import LocationLabel from '../components/LocationLabel.vue';
             Follow us on Instagram and message us for updates on new neighborhoods! 
         </p>
 
-        <div class="border flex justify-center">
+        <div class="flex justify-center">
         
-        <Button class="m-auto bg-shark p-5 rounded-full my-8">
-            <span class="text-sidecar font-bold text-xl">@groomclub4dogs</span>
+        <Button class="m-auto bg-shark p-5 rounded-full my-8 flex gap-2 items-center">
+            <InstagramIcon class="bg-sidecar hover:bg-white rounded-full p-2 cursor-pointer" />
+            <span class="text-sidecar font-bold text-2xl">
+                @groomclub4dogs
+            </span>
         </Button>
         
     </div>
@@ -177,7 +197,7 @@ import LocationLabel from '../components/LocationLabel.vue';
 
                 <div class="bg-shark p-5 text-2xl font-light text-center text-white rounded-3xl flex flex-col gap-5 items-center">
                     <!-- image -->
-                    <img class="w-24 h-auto" src="../assets/pictures/reportcard.png" />
+                    <img class="w-24 h-auto" src="../assets/pictures/snap.png" />
 
                     <p>
                         Don't worry about finding your vaccine info — we got you
@@ -186,7 +206,7 @@ import LocationLabel from '../components/LocationLabel.vue';
 
                 <div class="bg-shark p-5 text-2xl font-light text-center text-white rounded-3xl flex flex-col gap-5 items-center">
                     <!-- image -->
-                    <img class="w-24 h-auto" src="../assets/pictures/reportcard.png" />
+                    <img class="w-24 h-auto" src="../assets/pictures/fearfree.png" />
 
                     <p>
                         Rest easy knowing we're veterinary professionals
@@ -201,30 +221,30 @@ import LocationLabel from '../components/LocationLabel.vue';
             <p class="text-3xl text-shark mb-10">We don't make you <span class="font-bold"> play fetch </span></p>
 
             <div class="mx-10 relative my-5">
-
+            
                 <img class="w-full h-auto" src="../assets/pictures/circle.svg" />
 
-                <div class="absolute inset-0 top-20">
-                    <p class="text-6xl font-bold text-shark">150</p>
-                    <p class="text-xs w-[34ch] font-bold"> premium mobile grooming without add-ons or upsells </p> 
+                <div class="absolute inset-0 top-16 right-4">
+                    <p class="text-8xl font-extrabold text-shark">150</p>
+                    <p class="text-xs font-bold p-4"> premium mobile grooming without add-ons or upsells </p> 
                 </div>
             </div>
 
             <ul class="flex flex-col gap-4 text-start font-bold p-6">
                 <li> 
-                    <img class="w-12 h-auto inline" src="../assets/pictures/right_mar.svg"> 
+                    <img class="w-12 h-auto inline" src="../assets/pictures/right_mark.svg"> 
                     Same-week appointments 
                 </li>
                 <li> 
-                    <img class="w-12 h-auto inline" src="../assets/pictures/right_mar.svg"> 
+                    <img class="w-12 h-auto inline" src="../assets/pictures/right_mark.svg"> 
                     Stress-free grooming experience 
                 </li>
                 <li> 
-                    <img class="w-12 h-auto inline" src="../assets/pictures/right_mar.svg"> 
+                    <img class="w-12 h-auto inline" src="../assets/pictures/right_mark.svg"> 
                     Clean and safe environment 
                 </li>
                 <li> 
-                    <img class="w-12 h-auto inline" src="../assets/pictures/right_mar.svg"> 
+                    <img class="w-12 h-auto inline" src="../assets/pictures/right_mark.svg"> 
                     Premium grooming products 
                 </li>
             </ul>
@@ -319,19 +339,19 @@ import LocationLabel from '../components/LocationLabel.vue';
         </div>
 
         <div class="flex justify-center p-5">    
-            <img class="w-auto h-52 m-5" src="../assets/pictures/manicure.png" alt=""> 
+            <img class="w-auto h-60 m-5" src="../assets/pictures/manicure.png" alt=""> 
         </div>
 
-        <h2 class="font-bold text-2xl text-center m-5 text-shark">FAQ</h2>
+        <h2 class="font-extrabold text-2xl text-center m-5 text-shark">FAQ</h2>
 
-        <Accordion />
-        <Accordion />
-        <Accordion />
-        <Accordion />
-        <Accordion />
-        <Accordion />
+        <Accordion question="What is Groom Club" />
+        <Accordion question="How does it work?" />
+        <Accordion question="How much does each service cost?" />
+        <Accordion question="Will my dog still need regular veterrinary care" />
+        <Accordion question="What vaccinaiton are required" />
+        <Accordion question="What style cuts do you offer" />
 
-        <div class="bg-sidecar mx-2 mt-16 p-5 rounded-3xl rounded-b-none flex flex-col items-center gap-5">
+        <div class="bg-sidecar mx-4 mt-16 p-5 rounded-3xl rounded-b-none flex flex-col items-center gap-5">
             <h2 class="text-3xl text-center"> <span class="font-bold"> Wellness-focused </span> grooming, delivered to your doorstep</h2>
 
             <!-- image -->

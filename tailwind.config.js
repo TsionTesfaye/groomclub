@@ -12,6 +12,16 @@ export default {
         beryl_green:"#dce5b8",
         zinnwaldite:"#eacbac",
         heather:"#bdccd4",
+      },
+      animation:{
+        scroll_infinite:'scroll 20s linear infinite'
+      },
+      keyframes:{
+        scroll:{
+          to:{
+            translate:'-100%',
+          }
+        }
       }
     },
   },
