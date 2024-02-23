@@ -3,6 +3,12 @@
 @tailwind components;
 @tailwind utilities;
 
+
+::selection{
+    background: #bdccd4;
+    color:white;
+}
+
 @font-face {
     font-family: 'Gellix';
     src: url('./assets/font/Gellix-LightItalic.eot');

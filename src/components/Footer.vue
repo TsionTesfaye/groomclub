@@ -20,7 +20,7 @@ import LinkedinIcon from 'vue-material-design-icons/Linkedin.vue';
                 
                 <div class="flex items-center justify-center p-4 rounded-3xl bg-white shadow-lg mb-8">
                     <!-- <div> -->
-                        <input class="outline-none w-full h-full text-shark  placeholder:text-shark placeholder:font-normal placeholder:text-2xl" placeholder="Enter your email" type="email">
+                        <input class="outline-none w-full h-full text-shark  placeholder:text-shark placeholder:font-normal placeholder:text-2xl text-2xl" placeholder="Enter your email" type="email">
                         <img class="fill-sidecar" src="../assets/pictures/forward_black.svg" />
                     <!-- </div> -->
                 </div>

@@ -14,11 +14,14 @@ import InstagramIcon from 'vue-material-design-icons/Instagram.vue';
     <h1 class="text-3xl md:text-6xl p-5 text-center text-shark"> <span class="font-bold block">Wellness-focused </span> grooming, delivered to your doorstep </h1>
     <p class="text-xl md:text-2xl text-center text-shark p-5">The first mobile dog grooming service developed by vets for happy, healthy pets</p>
 
-    <JoinButton />
+    <div class="relative top-10">
+        <JoinButton />
+    </div>
     <!-- hero image -->
     <div class="flex overflow-x-hidden">
         <img class="lg:w-3/4 lg:mx-auto w-screen h-52 md:h-auto animate-scroll_infinite md:animate-none" src="../assets/pictures/groomclub-hero.png" />
-        <img class="md:hidden w-screen h-52 animate-scroll_infinite md:animate-none" src="../assets/pictures/groomclub-hero.png" />
+        <img class="lg:hidden w-screen h-52 animate-scroll_infinite md:animate-none" src="../assets/pictures/groomclub-hero.png" />
+        <img class="lg:hidden w-screen h-52 animate-scroll_infinite md:animate-none" src="../assets/pictures/groomclub-hero.png" />
     </div>
 
     <p class="text-5xl md:text-6xl text-center p-5 text-shark">The feeling is <span class="font-bold">mutual</span></p>
@@ -134,7 +137,7 @@ import InstagramIcon from 'vue-material-design-icons/Instagram.vue';
 
             <div class="relative">
             
-            <img class="w-full md:w-6/12 h-auto shadow-xl rounded-3xl absolute top-0 right-0" src="../assets/pictures/baily.svg" />
+            <img class="w-6/12 h-auto shadow-xl rounded-3xl absolute top-0 right-0" src="../assets/pictures/baily.svg" />
                 
             <img class="w-full h-auto rounded-full mt-6" src="../assets/pictures/dog-text-p-800.png" />
             </div>
@@ -142,36 +145,36 @@ import InstagramIcon from 'vue-material-design-icons/Instagram.vue';
         </div>
 
         <div class="md:text-start text-center">
-            <p class="text-3xl md:text-5xl  m-8">Total <span class="font-bold"> Care </span> </p>
+            <p class="text-3xl md:text-5xl  m-8 font-bold">Total Care <span class="font-normal"> grooming </span> </p>
 
             <p class="text-lg md:text-2xl  m-5">Not all dogs need haircuts, but every dog needs consistent care to stay healthy. Our Total Care grooming service is all-inclusive without add-ons or upsells and focuses on what really matters — your dog's health.</p>
 
-            <p class="font-bold m-5">Included with Total Care:</p>
+            <p class="font-extrabold m-5">Included with Total Care:</p>
             
             <div class="flex flex-wrap gap-4 justify-center md:justify-start m-8">
-                <LabelService service="Wellness check" />
-                <LabelService service="Soothing bath" />
-                <LabelService service="Nail trim & Dremel" />
-                <LabelService service="Blow dry" />
-                <LabelService service="Teeth brushing" />
-                <LabelService service="Brush out" />
-                <LabelService service="Ear cleaning" />
-                <LabelService service="Eye cleaning" />
-                <LabelService service="Anal gland expression" />
-                <LabelService service="Sanitary trim" />
-                <LabelService service="Facial scrub" />
+                <LabelService clr="green" service="Wellness check" />
+                <LabelService clr="red" service="Soothing bath" />
+                <LabelService clr="blue" service="Nail trim & Dremel" />
+                <LabelService clr="yellow" service="Blow dry" />
+                <LabelService clr="green" service="Teeth brushing" />
+                <LabelService clr="red" service="Brush out" />
+                <LabelService clr="red" service="Ear cleaning" />
+                <LabelService clr="blue" service="Eye cleaning" />
+                <LabelService clr="yellow" service="Anal gland expression" />
+                <LabelService clr="green" service="Sanitary trim" />
+                <LabelService clr="red" service="Facial scrub" />
                 
             </div>
             
-            <hr class="">
+            <hr class="h-px my-8 border border-shark w-1/2 md:w-full m-auto">
 
             <div class="m-8 text-center md:text-start">
 
                 <p class="font-bold block">Optional services:</p>
                 <div class="flex gap-8 items-center justify-center md:justify-start m-5 md:ml-0">
 
-                    <LabelService service="Haircut" />  
-                    <LabelService service="De-shedding" />
+                    <LabelService clr="green" service="Haircut" />  
+                    <LabelService clr="yellow" service="De-shedding" />
                 </div>
             
             </div>
@@ -187,17 +190,41 @@ import InstagramIcon from 'vue-material-design-icons/Instagram.vue';
             Health and wellness <span class="font-bold"> from nose to tail </span>
         </h3>
 
-        <p class="text-center text-lg font-normal md:text-2xl lg:max-w-[800px] lg:m-auto"> Early detection is critical to managing diseases. Groom Club members see a veterinary professional up to 12 times more per year than non-members, increasing the chances of catching a health issue early. </p>
+        <p class="text-center text-lg font-normal md:text-2xl lg:max-w-[800px] lg:m-auto"> 
+            Early detection is critical to managing diseases. Groom Club members see a veterinary professional up to 12 times more per year than non-members, increasing the chances of catching a health issue early. 
+        </p>
 
-        <div class="flex flex-wrap gap-5 relative mx-2 my-8 items-center justify-center"> 
+        <div class="relative flex flex-wrap lg:relative gap-5  mx-2 my-8 items-center justify-center"> 
             
-            <LabelBody part="Eye" />
-            <LabelBody part="Ear" />
-            <LabelBody part="Nose" />
-            <LabelBody part="Dental" />
-            <LabelBody part="Paw" />
-            <LabelBody part="Skin" />
-            <LabelBody part="Sanitary" />
+            <div class="lg:absolute left-40 top-40">
+                <LabelBody part="Eye" />
+            </div>
+            
+            <div class="lg:absolute bottom-80 left-1/4">
+                <LabelBody part="Ear" />
+            </div>
+            
+            <div class="lg:absolute left-12 top-60">
+                <LabelBody part="Nose" />
+            </div>
+            
+            <div class="lg:absolute bottom-96 left-40">
+                <LabelBody part="Dental" />
+            </div>
+            
+            <div class="lg:absolute bottom-2 left-1/4">
+                <LabelBody part="Paw" />
+            </div>
+            
+            <div class="lg:absolute">
+                <LabelBody part="Skin" />
+            </div>
+            
+            <div class="lg:absolute lg:right-0 lg:top-2/3">
+                <LabelBody part="Sanitary" />
+            </div>
+
+
 
             <!-- image -->
             <div>
@@ -205,7 +232,7 @@ import InstagramIcon from 'vue-material-design-icons/Instagram.vue';
             </div>
         </div>
 
-        <div class="flex flex-col md:flex-row gap-5 lg:w-11/12 lg:m-auto">
+        <div class="flex flex-col md:flex-row gap-5 lg:w-11/12 lg:m-auto relative top-24">
 
             <div class="bg-shark p-5 text-2xl font-light text-center text-white rounded-3xl flex flex-col gap-5 items-center">
                 <!-- image -->
@@ -237,23 +264,26 @@ import InstagramIcon from 'vue-material-design-icons/Instagram.vue';
 
     </div>
 
-    <div class="bg-white shadow-xl rounded-3xl text-center p-8 m-4 lg:w-11/12 lg:m-auto">
+    <div class="bg-white shadow-xl rounded-3xl text-center p-4 md:p-8 m-6 mt-32 lg:w-11/12 lg:m-auto">
         
         <p class="text-4xl md:text-7xl text-shark mb-10">We don't make you <span class="font-bold"> play fetch </span></p>
         
         <div class="lg:flex lg:justify-around">
-            <div class="mx-10 relative my-5 md:flex md:justify-center">
-            
-                <img class="w-full md:w-96 h-auto outline" src="../assets/pictures/circle.svg" />
 
-                <div class="absolute inset-0 top-16 md:top-24">
-                    <p class="text-6xl md:text-9xl font-extrabold text-shark">150</p>
-                    <p class="text-xs md:text-base font-bold p-4 md:px-40 lg:px-16"> premium mobile grooming without add-ons or upsells </p> 
+            <div class="mx-10 relative my-5 flex justify-center">
+            
+                <img class="w-80 md:w-96 md:h-96" src="../assets/pictures/circle.svg" />
+
+                <div class="absolute inset-0 top-24 md:top-24 lg:top-24">
+                    <p class="text-8xl md:text-9xl font-extrabold text-shark">150</p>
+                    <p class="text-xs md:text-base font-bold px-4 md:px-48 lg:px-20"> premium mobile grooming without add-ons or upsells </p> 
                 </div>
             </div>
 
             <div>
-                <ul class="flex flex-col gap-4 text-start font-bold p-6">
+              
+              <div class="flex justify-center">
+                <ul class="flex flex-col gap-2 text-start text-base font-extrabold p-6 mb-5">
                     <li> 
                         <img class="w-12 h-auto inline" src="../assets/pictures/right_mark.svg"> 
                         Same-week appointments 
@@ -271,14 +301,15 @@ import InstagramIcon from 'vue-material-design-icons/Instagram.vue';
                         Premium grooming products 
                     </li>
                 </ul>
-    
-                <div class="md:flex md:justify-center md:gap-4">
+              </div>
+
+                <div class="md:flex md:justify-center md:gap-5">
         
-                    <Button class="bg-shark text-2xl font-bold text-white p-4 rounded-tr-none rounded-full">
+                    <Button class="bg-shark text-xl font-bold text-white px-12 p-2 rounded-tr-none rounded-full hover:text-shark hover:outline hover:outline-shark hover:rounded-tr-full hover:bg-transparent transition-all duration-500">
                         Get Pricing
                     </Button>
         
-                    <p class="text-shark m-6 text-lg font-bold">
+                    <p class="text-shark m-6 text-xl font-semibold">
                         Call or text (615) 619-DOGS
                     </p>
                 </div>
@@ -297,9 +328,9 @@ import InstagramIcon from 'vue-material-design-icons/Instagram.vue';
         
     <div class="md:flex lg:justify-center md:flex-1 md:gap-4 md:items-center md:p-5">
 
-        <div class="bg-white rounded-3xl shadow-xl flex flex-col items-center gap-2 m-5 md:m-0 px-5 pb-10 overflow-hidden">
+        <div class="bg-white rounded-3xl shadow-2xl flex flex-col items-center gap-2 m-5 md:m-0 px-5 pb-10 overflow-hidden">
             <!-- image -->
-            <img class="w-[0.8] h-full" src="../assets/pictures/groomclub-compare.svg" />
+            <img class="w-[80%] h-full" src="../assets/pictures/groomclub-compare.svg" />
 
             <p class="text-shark text-2xl md:text-3xl text-center">
                 Mobile grooming, 
@@ -364,20 +395,20 @@ import InstagramIcon from 'vue-material-design-icons/Instagram.vue';
         </div>
     </div>
 
-    <div class="md:flex">
+    <div class="md:flex md:m-auto md:px-20 md:w-fit">
     
         <div class="md:flex md:flex-col md:justify-start">
-            <h2 class="text-shark text-center md:text-start m-10 text-3xl md:text-6xl">
+            <h2 class="text-shark text-center md:text-start my-10 text-3xl md:text-6xl">
                 Have a question? <span class="font-bold block">We got you</span>
             </h2>
 
-            <div class="flex flex-1 gap-2 bg-beryl_green m-auto md:m-0 md:ml-10 rounded-full rounded-tr-none w-fit h-fit p-4 text-lg">
+            <div class="flex gap-2 font-bold bg-beryl_green hover:bg-shark hover:text-white m-auto md:m-0 lg::ml-10 md:items-center rounded-full rounded-tr-none hover:rounded-tr-full transition-all duration-500  w-fit h-fit p-4 text-lg">
 
                 <img class="w-auto h-12" src="../assets/pictures/callus-groom.png" alt=""> 
             
-                <p class=" ">
+                <p class="">
                     Call or text (615) 619-DOGS
-                    <span class="block text-base font-bold">Available now!</span>
+                    <span class="block text-base">Available now!</span>
                 </p>
             </div>
         </div>
@@ -387,7 +418,11 @@ import InstagramIcon from 'vue-material-design-icons/Instagram.vue';
         </div>
     </div>
 
-        <h2 class="font-extrabold text-2xl md:text-4xl text-center m-5 md:text-start text-shark">FAQ</h2>
+    <div class="md:w-11/12 md:m-auto">
+
+        <h2 class="font-extrabold text-2xl md:text-4xl text-center m-5 md:text-start text-shark">
+            FAQ
+        </h2>
 
         <Accordion question="What is Groom Club" />
         <Accordion question="How does it work?" />
@@ -395,15 +430,15 @@ import InstagramIcon from 'vue-material-design-icons/Instagram.vue';
         <Accordion question="Will my dog still need regular veterrinary care" />
         <Accordion question="What vaccinaiton are required" />
         <Accordion question="What style cuts do you offer" />
-
-        <div class="bg-sidecar relative mx-4 mt-16 p-24 rounded-3xl rounded-b-none flex flex-col items-center gap-5 overflow-hidden">
+    </div>
+        <div class="bg-sidecar relative mx-4 mt-16 p-8 md:p-24 rounded-3xl rounded-b-none flex flex-col items-center gap-5 overflow-hidden">
             <h2 class="text-4xl text-center text-shark"> <span class="font-bold"> Wellness-focused </span> grooming, delivered to your doorstep</h2>
 
-            <img class="w-full h-full m-auto md:absolute  md:h-[9rem] md:w-auto  md:-left-2 md:-bottom-1" src="../assets/pictures/Dog_Footer.png" /> 
+            <img class="w-full h-full m-auto md:absolute  md:h-[9rem] md:w-auto md:-left-2 md:-bottom-1" src="../assets/pictures/Dog_Footer.png" /> 
 
             <JoinButton />
 
-            <p class="text-xl text-shark font-bold">Call or text (615) 619-3647</p>
+            <p class="text-xl text-shark text-center whitespace-nowrap font-bold ">Call or text (615) 619-3647</p>
         </div>
 
         <Footer />
