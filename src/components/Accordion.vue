@@ -4,7 +4,7 @@ const {question} = defineProps(['question'])
 
 <template>
     
-        <div class="group bg-shark text-white text-xl font-bold p-4 m-5 rounded-3xl flex justify-between">
+        <div class="group bg-shark text-white text-xl md:text-2xl font-bold p-6 m-5 rounded-3xl flex justify-between">
             
             <p class="">{{question}}</p>
             <!-- <p class="hidden group-focus:block">

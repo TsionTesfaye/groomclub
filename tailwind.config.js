@@ -3,6 +3,9 @@ export default {
   content: ["./src/**/*.{html,js,vue,ts}", "./index.html"],
   theme: {
     extend: {
+      fontFamily:{
+        body:['Gellix']
+      },
       colors:{
         white:"#ffffff",
         spring_wood:"#f7f4f0",

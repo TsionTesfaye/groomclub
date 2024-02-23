@@ -7,10 +7,9 @@ const {town, soon} = defineProps(['town','soon'])
     <p 
     :class="{
     'bg-sidecar text-center p-2 rounded-md font-bold text-shark' : !soon,
-    'p-3 rounded-md font-bold text-shark border-[2px] border-shark' : soon }">    
-        <span> {{town}} </span>
-        <span v-if="soon" class="bg-sidecar p-2 m-2 rounded-md font-bold text-shark text-xs"> coming soon </span>
-    
+    'text-shark rounded-md font-bold  border-[2px] border-shark flex items-center gap-2 p-2' : soon }">    
+        <span class="lg:text-2xl"> {{town}} </span>
+        <span v-if="soon" class="bg-sidecar text-center p-1 rounded-md font-bold text-shark text-xs"> coming soon </span>
         </p>
 
 </template>
