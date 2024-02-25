@@ -8,11 +8,11 @@ import LinkedinIcon from 'vue-material-design-icons/Linkedin.vue';
 
 <template>
     <!-- image -->
-    <div class="bg-shark text-white rounded-t-2xl">
+    <div class="bg-shark text-white rounded-t-2xl ">
 
-        <div class="p-5 flex flex-col md:flex-1 md:flex-row md:justify-around md:flex-wrap md:gap-3">
+        <div class="p-16 flex flex-col md:flex-1 md:flex-row md:justify-around md:flex-wrap md:gap-3 lg:container lg:m-auto">
 
-            <img class=" fill-current text-sidecar mb-5 md:w-[22rem]" src="../assets/pictures/groomclub_gc.svg" />
+            <img class="fill-current text-sidecar mb-5 md:w-[22rem] lg:w-[700px]" src="../assets/pictures/groomclub_gc.svg" />
             
             <div class="md:order-2   md:w-full">
 

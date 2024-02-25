@@ -9,6 +9,11 @@
     color:white;
 }
 
+.container{
+    max-width: 1200px;
+    margin:auto;
+}
+
 @font-face {
     font-family: 'Gellix';
     src: url('./assets/font/Gellix-LightItalic.eot');

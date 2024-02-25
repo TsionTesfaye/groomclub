@@ -7,6 +7,7 @@ import LabelBody from '../components/LabelBody.vue';
 import LabelService from '../components/LabelService.vue';
 import LocationLabel from '../components/LocationLabel.vue';
 import InstagramIcon from 'vue-material-design-icons/Instagram.vue';
+import PreFooter from '../components/PreFooter.vue';
 </script>
 
 <template>
@@ -19,15 +20,15 @@ import InstagramIcon from 'vue-material-design-icons/Instagram.vue';
     </div>
     <!-- hero image -->
     <div class="flex overflow-x-hidden">
-        <img class="lg:w-3/4 lg:mx-auto w-screen h-52 md:h-auto animate-scroll_infinite md:animate-none" src="../assets/pictures/groomclub-hero.png" />
-        <img class="lg:hidden w-screen h-52 animate-scroll_infinite md:animate-none" src="../assets/pictures/groomclub-hero.png" />
-        <img class="lg:hidden w-screen h-52 animate-scroll_infinite md:animate-none" src="../assets/pictures/groomclub-hero.png" />
+        <img class="container lg:w-3/4 lg:mx-auto w-screen h-52 md:h-auto animate-scroll_infinite md:animate-none" src="../assets/pictures/groomclub-hero.png" />
+        <img class="container lg:hidden w-screen h-52 animate-scroll_infinite md:animate-none" src="../assets/pictures/groomclub-hero.png" />
+        <img class="container lg:hidden w-screen h-52 animate-scroll_infinite md:animate-none" src="../assets/pictures/groomclub-hero.png" />
     </div>
 
     <p class="text-5xl md:text-6xl text-center p-5 text-shark">The feeling is <span class="font-bold">mutual</span></p>
     <!-- slider -->
 
-    <div>
+    <div class="lg:container lg:m-auto">
 
         <div class="flex gap-2 items-center h-fit bg-white p-5 rounded-2xl shadow-xl mx-5">
             <img class="w-auto h-14 rounded-full" src="../assets/pictures/Alyson-p-500.jpg" />
@@ -41,7 +42,16 @@ import InstagramIcon from 'vue-material-design-icons/Instagram.vue';
     </div>
 
 
-    <div class="flex overflow-x-hidden text-shark text-8xl text-center whitespace-nowrap py-10">
+    <div class="flex overflow-x-hidden text-shark text-9xl text-center whitespace-nowrap py-10">
+        <p class="animate-scroll_infinite">
+        Hey <span class="font-bold"> Nashville </span> we're on your doorstep
+        </p>
+        <p class="animate-scroll_infinite">
+        Hey <span class="font-bold"> Nashville </span> we're on your doorstep
+        </p>
+        <p class="animate-scroll_infinite">
+        Hey <span class="font-bold"> Nashville </span> we're on your doorstep
+        </p>
         <p class="animate-scroll_infinite">
         Hey <span class="font-bold"> Nashville </span> we're on your doorstep
         </p>
@@ -52,18 +62,36 @@ import InstagramIcon from 'vue-material-design-icons/Instagram.vue';
 
     <div class="flex flex-wrap gap-5 md:gap-2 lg:gap-6 lg:w-3/4 lg:mx-auto justify-center p-10">
         
-        <LocationLabel town="Germantown" :soon="false" />
-        
-        <LocationLabel town="East Nashville" :soon="false" />
-        
-        <LocationLabel town="Downtown" :soon="true" />
-        
-        <LocationLabel town="The Gulch" :soon="true" />
-        
-        <LocationLabel town="Belmont-Hillsboro" :soon="true" />
-        
-        <LocationLabel town="12 South" :soon="true" />
-       
+        <LocationLabel 
+            :soon="false" 
+            town="Germantown" 
+        />
+
+        <LocationLabel 
+            :soon="false" 
+            town="East Nashville" 
+        />
+
+        <LocationLabel 
+            :soon="true" 
+            town="Downtown" 
+        />
+
+        <LocationLabel 
+            :soon="true" 
+            town="The Gulch" 
+        />
+
+        <LocationLabel 
+            :soon="true" 
+            town="Belmont-Hillsboro" 
+        />
+
+        <LocationLabel 
+            :soon="true" 
+            town="12 South" 
+        />
+
     </div>
 
         <!-- video -->
@@ -71,7 +99,7 @@ import InstagramIcon from 'vue-material-design-icons/Instagram.vue';
             <img class="w-full h-full rounded-xl" src="../assets/pictures/dog_need_grooming.jpg" />
         </div>
 
-        <div class="lg:flex lg:items-center lg:px-16 lg:m-10" >
+        <div class="lg:flex lg:items-center lg:px-16 lg:container lg:m-auto" >
             
             <p class="text-shark text-3xl md:text-6xl text-center p-6 md:p-16 lg:p-0 lg:text-start">Don't see your neighborhood? 
                 <span class="font-bold"> Don't worry. </span>
@@ -95,7 +123,7 @@ import InstagramIcon from 'vue-material-design-icons/Instagram.vue';
         
     </div>
 
-    <div class="bg-shark lg:flex-row lg:w-11/12 lg:m-auto lg:mb-10 text-white_linen mx-5 my-7 rounded-3xl p-8 flex justify-center flex-col items-center text-center gap-5">
+    <div class="bg-shark lg:flex-row lg:w-11/12 lg:m-auto lg:mb-10 lg:container text-white_linen mx-5 my-7 rounded-3xl p-8 flex justify-center flex-col items-center text-center gap-5">
         <!-- image -->
         <img class="w-full h-92 rounded-3xl md:p-4" src="../assets/pictures/groomclub-15.webp" />
         
@@ -129,7 +157,7 @@ import InstagramIcon from 'vue-material-design-icons/Instagram.vue';
 
     </div>
 
-    <div class="text-shark md:grid md:grid-cols-2 md:flex-1 md:justify-evenly md:gap-2 md:mb-20 lg:w-11/12 lg:m-auto">
+    <div class="text-shark md:grid md:grid-cols-2 md:flex-1 md:justify-evenly md:gap-2 md:mb-20 lg:w-11/12 lg:m-auto lg:container">
     
         <div class="relative mt-5 ml-4">
 
@@ -184,7 +212,7 @@ import InstagramIcon from 'vue-material-design-icons/Instagram.vue';
     
     </div>
 
-    <div class="bg-sidecar p-8 rounded-[3rem] my-6 text-shark font-semibold">
+    <div class="bg-sidecar p-8 rounded-[3rem] my-6 md:mb-40 text-shark font-semibold">
         
         <h3 class="text-center text-2xl md:text-5xl md:p-5 text-shark">
             Health and wellness <span class="font-bold"> from nose to tail </span>
@@ -194,45 +222,64 @@ import InstagramIcon from 'vue-material-design-icons/Instagram.vue';
             Early detection is critical to managing diseases. Groom Club members see a veterinary professional up to 12 times more per year than non-members, increasing the chances of catching a health issue early. 
         </p>
 
-        <div class="relative flex flex-wrap lg:relative gap-5  mx-2 my-8 items-center justify-center"> 
+        <div class="relative flex flex-wrap lg:relative gap-5 my-8 items-center justify-center lg:max-w-[950px] mx-auto"> 
             
-            <div class="lg:absolute left-40 top-40">
-                <LabelBody part="Eye" />
+            <div class="lg:absolute left-40 top-28">
+                <LabelBody 
+                    part="Eye"
+                    content="Eye health in dogs is critical. Signs like redness, tearing, or cloudiness can signal serious issues. Conditions such as corneal ulcers, cataracts, and dry eyes can cause significant discomfort and pain in dogs."
+                 />
             </div>
             
             <div class="lg:absolute bottom-80 left-1/4">
-                <LabelBody part="Ear" />
+                <LabelBody 
+                    part="Ear"
+                    content="Ear infections are a common health concern in dogs, often resulting from yeast or bacterial infections. Left untreated, these infections can progress, leading to inflamed, painful, and thickened ears, making future cleaning and treatment more challenging."
+                 />
             </div>
             
-            <div class="lg:absolute left-12 top-60">
-                <LabelBody part="Nose" />
+            <div class="lg:absolute left-0 top-44">
+                <LabelBody 
+                    part="Nose"
+                    content="Monitoring your dog's nasal health is essential, as changes like a dry or excessively wet nose, cracking, or discharge can signify various health issues, including allergies, dehydration, or infections."
+                 />
             </div>
             
-            <div class="lg:absolute bottom-96 left-40">
-                <LabelBody part="Dental" />
+            <div class="lg:absolute bottom-72 left-28">
+                <LabelBody 
+                    part="Dental"
+                    content="Dental health affects your pet’s entire body. We will look for signs of gingivitis, loose teeth, tartar accumulation, and oral masses. A dirty mouth can harm your dog's heart, kidneys, and other organs because of traveling oral bacteria."
+                 />
             </div>
             
-            <div class="lg:absolute bottom-2 left-1/4">
-                <LabelBody part="Paw" />
+            <div class="lg:absolute bottom-2 left-32">
+                <LabelBody 
+                    part="Paw"
+                    content="Healthy paws are essential for a dog's mobility and overall well-being. Signs of cracking, swelling, or excessive licking can point to specific conditions like fungal infections, allergies, or even injuries."
+                 />
             </div>
             
             <div class="lg:absolute">
-                <LabelBody part="Skin" />
+                <LabelBody 
+                    part="Skin"
+                    content="Dry, itchy skin and hair loss in pets may signal several health concerns, such as allergies, mange, skin infections, hormonal imbalances, flea infestations, or inadequate nutrition. The condition of your pet's skin and hair coat is a key indicator of their overall health."
+                 />
             </div>
             
-            <div class="lg:absolute lg:right-0 lg:top-2/3">
-                <LabelBody part="Sanitary" />
+            <div class="lg:absolute right-4 top-2/4">
+                <LabelBody 
+                    part="Sanitary"
+                    content="Maintaining the health of your dog's anal glands is important. These glands can become full, impacted, or infected, leading to discomfort and health issues."
+                 />
             </div>
-
-
 
             <!-- image -->
-            <div>
+            <!-- <div> -->
                 <img class="w-full h-full" src="../assets/pictures/vet_illo.png" />
-            </div>
+            <!-- </div> -->
         </div>
 
-        <div class="flex flex-col md:flex-row gap-5 lg:w-11/12 lg:m-auto relative top-24">
+        <div class="flex flex-col justify-center md:flex-row gap-5  lg:m-auto lg:container  relative top-24">
 
             <div class="bg-shark p-5 text-2xl font-light text-center text-white rounded-3xl flex flex-col gap-5 items-center">
                 <!-- image -->
@@ -264,7 +311,7 @@ import InstagramIcon from 'vue-material-design-icons/Instagram.vue';
 
     </div>
 
-    <div class="bg-white shadow-xl rounded-3xl text-center p-4 md:p-8 m-6 mt-32 lg:w-11/12 lg:m-auto">
+    <div class="bg-white shadow-xl rounded-3xl text-center p-4 md:p-8 m-6 mt-36 lg:w-11/12 lg:m-auto lg:container">
         
         <p class="text-4xl md:text-7xl text-shark mb-10">We don't make you <span class="font-bold"> play fetch </span></p>
         
@@ -303,9 +350,9 @@ import InstagramIcon from 'vue-material-design-icons/Instagram.vue';
                 </ul>
               </div>
 
-                <div class="md:flex md:justify-center md:gap-5">
+                <div class="md:flex md:justify-center md:gap-2 whitespace-nowrap">
         
-                    <Button class="bg-shark text-xl font-bold text-white px-12 p-2 rounded-tr-none rounded-full hover:text-shark hover:outline hover:outline-shark hover:rounded-tr-full hover:bg-transparent transition-all duration-500">
+                    <Button class="bg-shark text-xl font-bold text-white px-8 whitespace-nowrap rounded-tr-none rounded-full hover:text-shark hover:outline hover:outline-shark hover:rounded-tr-full hover:bg-transparent transition-all duration-500">
                         Get Pricing
                     </Button>
         
@@ -326,7 +373,7 @@ import InstagramIcon from 'vue-material-design-icons/Instagram.vue';
         to give their best friend the long,healthy life they deserve.
     </p>
         
-    <div class="md:flex lg:justify-center md:flex-1 md:gap-4 md:items-center md:p-5">
+    <div class="md:flex lg:justify-center md:flex-1 md:gap-8 md:items-center md:p-5">
 
         <div class="bg-white rounded-3xl shadow-2xl flex flex-col items-center gap-2 m-5 md:m-0 px-5 pb-10 overflow-hidden">
             <!-- image -->
@@ -418,7 +465,7 @@ import InstagramIcon from 'vue-material-design-icons/Instagram.vue';
         </div>
     </div>
 
-    <div class="md:w-11/12 md:m-auto">
+    <div class="md:w-11/12 md:m-auto lg:max-w-[840px]">
 
         <h2 class="font-extrabold text-2xl md:text-4xl text-center m-5 md:text-start text-shark">
             FAQ
@@ -431,16 +478,9 @@ import InstagramIcon from 'vue-material-design-icons/Instagram.vue';
         <Accordion question="What vaccinaiton are required" />
         <Accordion question="What style cuts do you offer" />
     </div>
-        <div class="bg-sidecar relative mx-4 mt-16 p-8 md:p-24 rounded-3xl rounded-b-none flex flex-col items-center gap-5 overflow-hidden">
-            <h2 class="text-4xl text-center text-shark"> <span class="font-bold"> Wellness-focused </span> grooming, delivered to your doorstep</h2>
 
-            <img class="w-full h-full m-auto md:absolute  md:h-[9rem] md:w-auto md:-left-2 md:-bottom-1" src="../assets/pictures/Dog_Footer.png" /> 
+    <PreFooter />
 
-            <JoinButton />
-
-            <p class="text-xl text-shark text-center whitespace-nowrap font-bold ">Call or text (615) 619-3647</p>
-        </div>
-
-        <Footer />
+    <Footer />
 
 </template>
