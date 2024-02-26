@@ -13,7 +13,7 @@ export default defineComponent({
 </script>
 
 <template>
-    <div class="bg-white_linen">
+    <div class="bg-white_linen lg:container lg:m-auto">
         <div class="bg-shark flex flex-col px-5 pt-20 pb-7 text-white_linen justify-between rounded-b-3xl">
             <div class="text-center">
                 <p class="text-3xl  "> We’re reimagining <span class="font-bold">grooming</span></p>
