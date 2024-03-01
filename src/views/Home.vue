@@ -8,6 +8,43 @@ import LabelService from '../components/LabelService.vue';
 import LocationLabel from '../components/LocationLabel.vue';
 import InstagramIcon from 'vue-material-design-icons/Instagram.vue';
 import PreFooter from '../components/PreFooter.vue';
+import {ref, onMounted } from 'vue'
+
+import gsap from 'gsap';
+import { ScrollTrigger } from 'gsap/ScrollTrigger';
+
+
+const img = ref(null)
+const video = ref(null)
+
+gsap.registerPlugin(ScrollTrigger)
+
+onMounted(() => { 
+
+     // Create an Intersection Observer
+
+     gsap.fromTo(img.value, { scale:0 }, 
+        {
+            scrollTrigger: {
+                trigger: img.value,
+                start: 'top bottom',
+            }, 
+            scale:1 
+        }) 
+
+     gsap.fromTo(video.value, { scale:0.5 }, 
+        {
+            scrollTrigger: {
+                trigger: video.value,
+                start: 'top bottom',
+                end: 'top 80%',
+            }, 
+            scale:1 
+        }) 
+
+
+});
+
 </script>
 
 <template>
@@ -96,7 +133,7 @@ import PreFooter from '../components/PreFooter.vue';
 
         <!-- video -->
         <div class="p-5 md:p-0">
-            <img class="w-full h-full rounded-xl" src="../assets/pictures/dog_need_grooming.jpg" />
+            <img ref="video" class="w-full h-full rounded-xl" src="../assets/pictures/dog_need_grooming.jpg" />
         </div>
 
         <div class="lg:flex lg:items-center lg:px-16 lg:container lg:m-auto" >
@@ -165,9 +202,9 @@ import PreFooter from '../components/PreFooter.vue';
 
             <div class="relative">
             
-            <img class="w-6/12 h-auto shadow-xl rounded-3xl absolute top-0 right-0" src="../assets/pictures/baily.svg" />
+            <img ref="img" id="img" class="img w-6/12 h-auto shadow-xl rounded-3xl absolute top-0 right-0" src="../assets/pictures/baily.svg" />
                 
-            <img class="w-full h-auto rounded-full mt-6" src="../assets/pictures/dog-text-p-800.png" />
+            <img class=" w-full h-auto rounded-full mt-6" src="../assets/pictures/dog-text-p-800.png" />
             </div>
             
         </div>
